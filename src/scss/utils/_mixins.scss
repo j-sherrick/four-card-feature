@@ -1,0 +1,25 @@
+// Adjust these breakpoints as needed
+
+$breakpoints: (
+  // 256px
+  xs: 301px,
+  // 512px
+  sm: 601px,
+  // 768px
+  md: 901px,
+  // 992px
+  lg: 1201px
+);
+
+@mixin breakpoints($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Unknown breakpoint: #{$breakpoint}.";
+    @media (min-width: map-get($breakpoints, xs)) {
+      @content;
+    }
+  }
+}

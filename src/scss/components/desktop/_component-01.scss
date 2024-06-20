@@ -1,0 +1,38 @@
+// Desktop styles
+@use '../../utils/' as *;
+
+@include breakpoints('sm') {
+  .product-card {
+    margin: 0;
+    max-width: 600px;
+    height: 450px;
+    grid-template-columns: repeat(2, auto);
+
+    &__picture {
+      border-radius: 0.5rem 0 0 0.5rem;
+      height: inherit;
+
+      &--default {
+        width: auto;
+        height: 100%;
+      }
+    }
+
+    &__info {
+      padding: 2rem;
+    }
+
+    &__overline {
+      margin-bottom: 1.25rem;
+    }
+
+    &__name {
+      margin-bottom: 1.5rem;
+    }
+
+    &__description,
+    &__price {
+      margin-bottom: 1.875rem;
+    }
+  }
+}

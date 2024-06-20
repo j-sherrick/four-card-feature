@@ -1,0 +1,28 @@
+{
+  "name": "sass-bem",
+  "source": "src/index.html",
+  "version": "1.0.0",
+  "description": "This is a basic starter template for developing BEM-based Sass solutions with Parcel.",
+  "scripts": {
+    "start": "npx parcel src/index.html --host 0.0.0.0 --port 4321",
+    "build": "npx parcel build src/index.html --no-optimize --public-url ./",
+    "push-gh": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose",
+    "cleanup": "rm -rf dist/* .parcel-cache"
+  },
+  "keywords": [
+    "parcel",
+    "sass",
+    "frontend-mentor",
+    "css",
+    "bem",
+    "frontend",
+    "web-development"
+  ],
+  "author": "Jason Sherrick",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
+    "push-dir": "^0.4.1"
+  },
+  "main": "index.js"
+}
