@@ -3,21 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link rel="icon" type="image/png" sizes="32x32" href="./images/#" />
     <link rel="stylesheet" href="./scss/style.scss" />
 
-    <title>
-      Sassy BEM Template | Develop Robust Frontend Mentor Projects With Sass and Publish to GitHub Pages
-    </title>
+    <title>Four Card Feature |</title>
   </head>
   <body>
-    <!------------ BEGIN HEADER BLOCK -------------->
+    <!------------ BEGIN HEADER -------------->
     <header class="header">
-      <h1>
-        <span class="heading--extra-light">Reliable, efficient delivery</span>
-        <span class="heading--semi-bold">Powered by Technology</span>
+      <h1 class="header__heading">
+        <span class="header__heading--extra-light">Reliable, efficient delivery</span>
+        <span class="header__heading--semi-bold">Powered by Technology</span>
       </h1>
 
       <p>
@@ -25,34 +21,34 @@
         project is successful
       </p>
     </header>
-    <!------------ END HEADER BLOCK -------------->
+    <!------------ END HEADER -------------->
 
-    <!------------ BEGIN CONTENT BLOCK -------------->
+    <!------------ BEGIN CONTENT -------------->
     <main class="content">
-      <article class="feature-card">
-        <h2 class="feature-card__heading">Supervisor</h2>
-        <p>Monitors activity to identify project roadblocks</p>
-      </article>
+      <!------------ BEGIN FEATURE -------------->
+      <article class="feature">
+        <article class="feature__card">
+          <h2 class="feature-card__heading">Supervisor</h2>
+          <p>Monitors activity to identify project roadblocks</p>
+        </article>
 
-      <article class="feature-card">
-        <h2 class="feature-card__heading">Team Builder</h2>
-        <p>Scans our talent network to create the optimal team for your project</p>
-      </article>
+        <article class="feature__card">
+          <h2 class="feature-card__heading">Team Builder</h2>
+          <p>Scans our talent network to create the optimal team for your project</p>
+        </article>
 
-      <article class="feature-card">
-        <h2 class="feature-card__heading">Karma</h2>
-        <p>Regularly evaluates our talent to ensure quality</p>
-      </article>
+        <article class="feature__card">
+          <h2 class="feature-card__heading">Karma</h2>
+          <p>Regularly evaluates our talent to ensure quality</p>
+        </article>
 
-      <article class="feature-card">
-        <h2 class="feature-card__heading">Calculator</h2>
-        <p>Uses data from past projects to provide better delivery estimates</p>
+        <article class="feature__card">
+          <h2 class="feature-card__heading">Calculator</h2>
+          <p>Uses data from past projects to provide better delivery estimates</p>
+        </article>
       </article>
+      <!------------ END FEATURE -------------->
     </main>
-    <!------------ END CONTENT BLOCK -------------->
-
-    <!------------ BEGIN FOOTER BLOCK -------------->
-    <footer class="footer"></footer>
-    <!------------ END FOOTER BLOCK -------------->
+    <!------------ END CONTENT -------------->
   </body>
 </html>
