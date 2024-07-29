@@ -1,8 +1,8 @@
 {
-  "name": "sass-bem",
+  "name": "four-card-feature",
   "source": "src/index.html",
   "version": "1.0.0",
-  "description": "TThis is a solution to the Four card feature section challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects. ",
+  "description": "This is a solution to the Four card feature section challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects. ",
   "scripts": {
     "start": "npx parcel src/index.html --host 0.0.0.0 --port 4321",
     "build": "npx parcel build src/index.html --no-optimize --public-url ./",
@@ -22,7 +22,7 @@
   "license": "MIT",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.12.0",
+    "prettier": "^3.3.3",
     "push-dir": "^0.4.1"
-  },
-  "main": "index.js"
+  }
 }
