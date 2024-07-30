@@ -1,1 +1,39 @@
 /// FEATURE CARD MOBILE STYLES ///
+
+.feature-card {
+  padding: 1.75rem;
+  // TODO: extract top border to ::before psuedo-element
+  border-top: 0.25rem solid transparent;
+  border-radius: 0.5rem;
+
+  &__heading {
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+
+  &__description {
+    font-size: 0.8125rem;
+    line-height: 1.5rem;
+  }
+
+  &__icon {
+    width: 57px;
+    height: auto;
+  }
+
+  &--supervisor {
+    border-color: var(--feature-clr-cyan);
+  }
+
+  &--team {
+    border-color: var(--feature-clr-red);
+  }
+
+  &--karma {
+    border-color: var(--feature-clr-orange);
+  }
+
+  &--calculator {
+    border-color: var(--feature-clr-blue);
+  }
+}
