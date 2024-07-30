@@ -10,3 +10,7 @@
   --feature-clr-grayishblue: hsl(229, 6%, 66%);
   --feature-clr-verylightgray: hsl(0, 0%, 98%);
 }
+
+body {
+  color: var(--feature-clr-darkblue);
+}

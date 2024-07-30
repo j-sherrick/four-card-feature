@@ -1,0 +1,16 @@
+.header {
+  text-align: center;
+
+  &__heading {
+    font-size: 1.5rem;
+    letter-spacing: 0.17px;
+
+    &--extra-light {
+      font-weight: 200;
+    }
+
+    &--semi-bold {
+      font-weight: 600;
+    }
+  }
+}

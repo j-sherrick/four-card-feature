@@ -1,14 +1,11 @@
 // Adjust these breakpoints as needed
 
 $breakpoints: (
-  // 256px
-  xs: 301px,
-  // 512px
-  sm: 601px,
-  // 768px
-  md: 901px,
-  // 992px
-  lg: 1201px
+  sm: 375px,
+  // (mobile)
+  md: 768px,
+  // (tablets)
+  lg: 1440px // Large devices (desktops)
 );
 
 @mixin breakpoints($breakpoint) {
