@@ -1,0 +1,15 @@
+/// FEATURE SECTION MOBILE LAYOUT ///
+@use '../utils' as *;
+.feature-section {
+  --feature-card-clamped: clamp(322px, 33vw, 350px);
+  display: grid;
+  grid-template-columns: var(--feature-card-clamped);
+  gap: 1.5rem;
+}
+
+
+@include breakpoints('md') {
+  .feature-section {
+    grid-template-columns: repeat(2, var(--feature-card-clamped));
+  }
+}
