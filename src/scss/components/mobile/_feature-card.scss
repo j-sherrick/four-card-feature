@@ -5,10 +5,11 @@
   // TODO: extract top border to ::before psuedo-element
   border-top: 0.25rem solid transparent;
   border-radius: 0.5rem;
+  box-shadow: 0 0.9375rem 1.875rem 0.6875rem var(--feature-clr-grayishblue);
 
   &__heading {
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 0 1.25rem;
   }
 
   &__description {

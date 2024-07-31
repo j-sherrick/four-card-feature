@@ -14,8 +14,8 @@ $breakpoints: (
       @content;
     }
   } @else {
-    @warn "Unknown breakpoint: #{$breakpoint}.";
-    @media (min-width: map-get($breakpoints, xs)) {
+    @warn "Unknown breakpoint: #{$breakpoint}. Using sm breakpoint.";
+    @media (min-width: map-get($breakpoints, sm)) {
       @content;
     }
   }

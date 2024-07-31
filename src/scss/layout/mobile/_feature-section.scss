@@ -1,6 +1,13 @@
 /// FEATURE SECTION MOBILE LAYOUT ///
-
+@use '../../utils' as *;
 .feature-section {
   display: grid;
   gap: 1.5rem;
+}
+
+
+@include breakpoints('md') {
+  .feature-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
