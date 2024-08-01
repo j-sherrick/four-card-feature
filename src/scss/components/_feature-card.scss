@@ -6,6 +6,7 @@
   border-top: 0.25rem solid transparent;
   border-radius: 0.5rem;
   box-shadow: 0 15px 30px -11px var(--feature-clr-grayishblue);
+  transition: position .3s ease-in-out;
 
   &__heading {
     font-weight: 600;
