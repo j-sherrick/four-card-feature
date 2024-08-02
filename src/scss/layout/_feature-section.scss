@@ -1,15 +1,23 @@
 /// FEATURE SECTION MOBILE LAYOUT ///
 @use '../utils' as *;
 .feature-section {
-  --feature-card-clamped: clamp(322px, 33vw, 350px);
+  --feature-card-clamp: clamp(322px, 90%, 350px);
   display: grid;
-  grid-template-columns: var(--feature-card-clamped);
-  gap: 1.5rem;
+  justify-content: center;
+  grid-template-columns: var(--feature-card-clamp);
+  gap: calc(1.5rem + 1px);
 }
 
 
 @include breakpoints('md') {
   .feature-section {
-    grid-template-columns: repeat(2, var(--feature-card-clamped));
+    grid-template-columns: repeat(2, var(--feature-card-clamp));
+    gap: 1.875rem;
+  }
+}
+
+@include breakpoints('lg') {
+  .feature-section {
+    grid-template-columns: repeat(3, var(--feature-card-clamp));
   }
 }

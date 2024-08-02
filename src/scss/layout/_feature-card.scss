@@ -1,4 +1,5 @@
-/// FEATURE CARD MOBILE LAYOUT ///
+/// FEATURE CARD LAYOUT ///
+@use '../utils/mixins' as *;
 
 .feature-card {
 
@@ -11,5 +12,28 @@
 
   &__icon {
     float: right;
+  }
+
+}
+
+@include breakpoints('lg') {
+  .feature-card {
+    &--supervisor {
+      grid-column: 1 / 2;
+      align-self: center;
+    }
+
+    &--team {
+      grid-column: 2 / 3;
+    }
+
+    &--karma {
+      grid-column: 2 / 3;
+    }
+
+    &--calculator {
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+    }
   }
 }
