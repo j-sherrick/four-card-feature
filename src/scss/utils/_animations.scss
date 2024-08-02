@@ -1,0 +1,22 @@
+$directions: (
+  "top": -125vh,
+  "bottom": 125vh,
+  "left": -125vw,
+  "right": 125vw
+);
+
+@each $direction, $offset in $directions {
+  @keyframes slidein-#{$direction} {
+    from {
+      @if $direction == "top" or $direction == "bottom" {
+        translate: 0 #{$offset};
+      } @else if $direction == "left" or $direction == "right" {
+        translate: #{$offset} 0;
+      }
+    }
+
+    to {
+      translate: 0;
+    }
+  }
+}
