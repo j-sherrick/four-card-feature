@@ -20,3 +20,23 @@ $directions: (
     }
   }
 }
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadein-from-scale {
+  from {
+    scale: 2;
+    opacity: 0.01;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}

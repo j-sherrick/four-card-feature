@@ -1,13 +1,12 @@
-/// FEATURE CARD COMPONENT ///
+/// FEATURE CARD STYLES ///
+@use "../utils/mixins" as *;
 @use "../utils/animations" as *;
 
 .feature-card {
   padding: 1.75rem;
-  // TODO: extract top border to ::before psuedo-element
   border-top: 0.25rem solid transparent;
   border-radius: 0.5rem;
   box-shadow: 0 15px 30px -11px var(--feature-clr-grayishblue);
-  transition: transform 0.75s ease-in-out;
 
   &__heading {
     font-weight: 600;
@@ -26,21 +25,69 @@
 
   &--supervisor {
     border-color: var(--feature-clr-cyan);
-    animation: 0.5s slidein-right ease-in-out;
+    animation: 0.3s slidein-right ease-in-out;
   }
 
   &--team {
     border-color: var(--feature-clr-red);
-    animation: 0.6s slidein-left ease-in-out;
+    animation: 0.4s slidein-left ease-in-out;
   }
 
   &--karma {
     border-color: var(--feature-clr-orange);
-    animation: 0.7s slidein-right ease-in-out;
+    animation: 0.5s slidein-right ease-in-out;
   }
 
   &--calculator {
     border-color: var(--feature-clr-blue);
-    animation: 0.8s slidein-left ease-in-out;
+    animation: 0.6s slidein-left ease-in-out;
+  }
+}
+
+@include breakpoints("md") {
+  .feature-card {
+    &--supervisor {
+      border-color: var(--feature-clr-cyan);
+      animation: 0.3s slidein-top ease-in-out;
+    }
+
+    &--team {
+      border-color: var(--feature-clr-red);
+      animation: 0.4s slidein-top ease-in-out;
+    }
+
+    &--karma {
+      border-color: var(--feature-clr-orange);
+      animation: 0.5s slidein-bottom ease-in-out;
+    }
+
+    &--calculator {
+      border-color: var(--feature-clr-blue);
+      animation: 0.6s slidein-bottom ease-in-out;
+    }
+  }
+}
+
+@include breakpoints("lg") {
+  .feature-card {
+    &--supervisor {
+      border-color: var(--feature-clr-cyan);
+      animation: 0.3s slidein-left ease-in-out;
+    }
+
+    &--team {
+      border-color: var(--feature-clr-red);
+      animation: 0.4s slidein-top ease-in-out;
+    }
+
+    &--karma {
+      border-color: var(--feature-clr-orange);
+      animation: 0.5s slidein-bottom ease-in-out;
+    }
+
+    &--calculator {
+      border-color: var(--feature-clr-blue);
+      animation: 0.6s slidein-right ease-in-out;
+    }
   }
 }

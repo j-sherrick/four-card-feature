@@ -1,5 +1,5 @@
-/// FEATURE SECTION MOBILE LAYOUT ///
-@use '../utils' as *;
+/// FEATURE SECTION LAYOUT ///
+@use "../utils" as *;
 .feature-section {
   --feature-card-clamp: clamp(322px, 90%, 350px);
   display: grid;
@@ -8,15 +8,14 @@
   gap: calc(1.5rem + 1px);
 }
 
-
-@include breakpoints('md') {
+@include breakpoints("md") {
   .feature-section {
     grid-template-columns: repeat(2, var(--feature-card-clamp));
     gap: 1.875rem;
   }
 }
 
-@include breakpoints('lg') {
+@include breakpoints("lg") {
   .feature-section {
     grid-template-columns: repeat(3, var(--feature-card-clamp));
   }
