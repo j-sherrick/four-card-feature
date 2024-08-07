@@ -1,22 +1,23 @@
 /// FEATURE SECTION LAYOUT ///
 @use "../utils" as *;
 .feature-section {
-  --feature-card-clamp: clamp(322px, 90%, 350px);
+  --feature-card-width: clamp(322px, 90%, 350px);
+
   display: grid;
   justify-content: center;
-  grid-template-columns: var(--feature-card-clamp);
+  grid-template-columns: var(--feature-card-width);
   gap: calc(1.5rem + 1px);
 }
 
 @include breakpoints("md") {
   .feature-section {
-    grid-template-columns: repeat(2, var(--feature-card-clamp));
+    grid-template-columns: repeat(2, var(--feature-card-width));
     gap: 1.875rem;
   }
 }
 
 @include breakpoints("lg") {
   .feature-section {
-    grid-template-columns: repeat(3, var(--feature-card-clamp));
+    grid-template-columns: repeat(3, var(--feature-card-width));
   }
 }

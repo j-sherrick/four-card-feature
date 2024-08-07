@@ -4,7 +4,7 @@
 
 .feature-card {
   padding: 1.75rem;
-  border-top: 0.25rem solid transparent;
+  position: relative;
   border-radius: 0.5rem;
   box-shadow: 0 15px 30px -11px var(--feature-clr-grayishblue);
 
@@ -24,45 +24,48 @@
   }
 
   &--supervisor {
-    border-color: var(--feature-clr-cyan);
     animation: 0.3s slidein-right ease-in-out;
   }
 
   &--team {
-    border-color: var(--feature-clr-red);
     animation: 0.4s slidein-left ease-in-out;
   }
 
   &--karma {
-    border-color: var(--feature-clr-orange);
     animation: 0.5s slidein-right ease-in-out;
   }
 
   &--calculator {
-    border-color: var(--feature-clr-blue);
     animation: 0.6s slidein-left ease-in-out;
+  }
+
+  &::before {
+    content: "";
+    height: 4px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--feature-clr-red);
+    position: absolute;
+    overflow: hidden;
   }
 }
 
 @include breakpoints("md") {
   .feature-card {
     &--supervisor {
-      border-color: var(--feature-clr-cyan);
       animation: 0.3s slidein-top ease-in-out;
     }
 
     &--team {
-      border-color: var(--feature-clr-red);
       animation: 0.4s slidein-top ease-in-out;
     }
 
     &--karma {
-      border-color: var(--feature-clr-orange);
       animation: 0.5s slidein-bottom ease-in-out;
     }
 
     &--calculator {
-      border-color: var(--feature-clr-blue);
       animation: 0.6s slidein-bottom ease-in-out;
     }
   }
@@ -71,22 +74,18 @@
 @include breakpoints("lg") {
   .feature-card {
     &--supervisor {
-      border-color: var(--feature-clr-cyan);
       animation: 0.3s slidein-left ease-in-out;
     }
 
     &--team {
-      border-color: var(--feature-clr-red);
       animation: 0.4s slidein-top ease-in-out;
     }
 
     &--karma {
-      border-color: var(--feature-clr-orange);
       animation: 0.5s slidein-bottom ease-in-out;
     }
 
     &--calculator {
-      border-color: var(--feature-clr-blue);
       animation: 0.6s slidein-right ease-in-out;
     }
   }
