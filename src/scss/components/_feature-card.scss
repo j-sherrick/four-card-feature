@@ -3,10 +3,32 @@
 @use "../utils/animations" as *;
 
 .feature-card {
-  padding: 1.75rem;
-  position: relative;
+  // position: relative;
+  overflow: hidden;
   border-radius: 0.5rem;
   box-shadow: 0 15px 30px -11px var(--feature-clr-grayishblue);
+  
+  &__container {
+    padding: 1.75rem;
+    border-top: .25rem solid var(--feature-clr-grayishblue);
+
+
+    &--supervisor {
+      animation: 0.3s slidein-right ease-in-out;
+    }
+
+    &--team {
+      animation: 0.4s slidein-left ease-in-out;
+    }
+
+    &--karma {
+      animation: 0.5s slidein-right ease-in-out;
+    }
+
+    &--calculator {
+      animation: 0.6s slidein-left ease-in-out;
+    }
+  }
 
   &__heading {
     font-weight: 600;
@@ -22,33 +44,16 @@
     width: 57px;
     height: auto;
   }
-
-  &--supervisor {
-    animation: 0.3s slidein-right ease-in-out;
-  }
-
-  &--team {
-    animation: 0.4s slidein-left ease-in-out;
-  }
-
-  &--karma {
-    animation: 0.5s slidein-right ease-in-out;
-  }
-
-  &--calculator {
-    animation: 0.6s slidein-left ease-in-out;
-  }
-
-  &::before {
-    content: "";
-    height: 4px;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: var(--feature-clr-red);
-    position: absolute;
-    overflow: hidden;
-  }
+  
+  // &::before {
+  //   content: "";
+  //   height: 4px;
+  //   width: 100%;
+  //   top: 0;
+  //   left: 0;
+  //   position: absolute;
+  //   overflow: hidden;
+  // }
 }
 
 @include breakpoints("md") {
