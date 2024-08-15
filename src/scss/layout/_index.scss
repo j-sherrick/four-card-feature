@@ -1,16 +1,4 @@
 @forward 'header';
 @forward 'feature-section';
 @forward 'feature-card';
-
-/// SHARED MOBILE LAYOUTS ///
-.header,
-.feature-card {
-  // width: 311px;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4.75rem;
-}
+@forward 'page';

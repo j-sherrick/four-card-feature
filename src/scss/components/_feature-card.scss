@@ -86,19 +86,19 @@
 @include breakpoints("lg") {
   .feature-card {
     &--supervisor {
-      animation: 0.3s slidein-left ease-in-out;
+      animation: 0.7s rotate-z ease-in-out;
     }
     
     &--calculator {
-      animation: 0.6s slidein-right ease-in-out;
+      animation: 0.7s rotate-z ease-in-out;
     }
 
     &--team {
-      animation: 0.4s slidein-top ease-in-out;
+      animation: 0.7s rotate-z ease-in-out;
     }
 
     &--karma {
-      animation: 0.5s slidein-bottom ease-in-out;
+      animation: 0.7s rotate-z ease-in-out;
     }
   }
 }
