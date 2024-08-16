@@ -1,3 +1,5 @@
+@use "sass:map";
+
 $directions: (
   "top": -125vh,
   "bottom": 125vh,
@@ -9,9 +11,9 @@ $directions: (
   @keyframes slidein-#{$direction} {
     from {
       @if $direction == "top" or $direction == "bottom" {
-        translate: 0 #{$offset};
+        translate: 0 $offset;
       } @else if $direction == "left" or $direction == "right" {
-        translate: #{$offset} 0;
+        translate: $offset 0;
       }
     }
 
@@ -21,34 +23,20 @@ $directions: (
   }
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@mixin slidein($duration: .7s, $direction: "left", $delay: 0s) {
+  @if map.has-key($directions, $direction) {
+    animation: $duration ease-in-out $delay slidein-#{$direction} backwards;
+  } @else {
+    @warn "Invalid direction: #{$direction}. Using slidein-left.";
+    animation: $duration ease-in-out $delay slidein-left backwards;
   }
 }
 
-@keyframes rotate-z {
+@keyframes swing-in {
   0% {
-    transform: rotateZ(90deg);
-  }
-  90% {
-    transform: rotateZ(-15deg);
+    transform: rotateX(-95deg);
   }
   100% {
-    transform: rotateZ(0);
-  }
-}
-
-@keyframes fadein-from-scale {
-  from {
-    scale: 2;
-    opacity: 0.01;
-  }
-  to {
-    scale: 1;
-    opacity: 1;
+    transform: rotateX(0);
   }
 }

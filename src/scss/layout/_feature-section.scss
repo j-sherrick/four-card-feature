@@ -1,16 +1,19 @@
 /// FEATURE SECTION LAYOUT ///
 @use "../utils" as *;
-.feature-section {
-  --feature-card-width: clamp(322px, 90%, 350px);
 
+.feature-section {
+  --feature-card-width: clamp(311px, 3.66vw + 297.275px, 350px);
+  margin-top: 4.75rem;
   display: grid;
   justify-content: center;
   grid-template-columns: var(--feature-card-width);
-  gap: calc(1.5rem + 1px);
+  gap: 1.5rem;
+  // transition: margin-top .3s ease-in-out;
 }
 
 @include breakpoints("md") {
   .feature-section {
+    margin-top: 4rem;
     grid-template-columns: repeat(2, var(--feature-card-width));
     gap: 1.875rem;
   }

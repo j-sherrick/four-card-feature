@@ -2,6 +2,14 @@
 
 .header {
   margin-top: 85px;
+  width: clamp(311px, 21.5vw + 230.38px, 540px);
+
+  &__heading {
+
+    &--extra-light {
+      display: block;
+    }
+  }
 
   &__description {
     margin-top: 1rem;

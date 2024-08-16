@@ -1,0 +1,28 @@
+:root {
+  --feature-h1-size: clamp(1.5rem, 0.751vw + 1.275rem, 2rem);
+}
+
+body {
+  font:
+    normal 200 .9375rem/1.5 'Poppins',
+    sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+
+h1 {
+  letter-spacing: 0.17px;
+  font-size: var(--feature-h1-size);
+}
+
+h2 {
+  font-size: 1.25rem;
+}

@@ -1,9 +1,7 @@
 /// FEATURE CARD STYLES ///
-@use "../utils/mixins" as *;
-@use "../utils/animations" as *;
+@use "../utils" as *;
 
 .feature-card {
-  position: relative;
   overflow: hidden;
   border-radius: 0.5rem;
   box-shadow: 0 15px 30px -11px var(--feature-clr-grayishblue);
@@ -12,6 +10,7 @@
     padding: 1.75rem;
     border-top: .25rem solid transparent;
 
+    // card border colors
     &--supervisor {
       border-color: var(--feature-clr-cyan);
     }
@@ -29,76 +28,25 @@
     }
   }
 
-  &__heading {
-    font-weight: 600;
-    font-size: 0 1.25rem;
-  }
-
-  &__description {
-    font-size: 0.8125rem;
-    line-height: 1.5rem;
-  }
-
   &__icon {
-    width: 57px;
+    width: clamp(57px, .657vw + 54.536px, 64px);
     height: auto;
   }
   
   // card animations:
   &--supervisor {
-    animation: 0.3s slidein-right ease-in-out;
+    @include slidein(.3s, "left");
   }
-
+  
   &--calculator {
-    animation: 0.6s slidein-left ease-in-out;
+    @include slidein(.3s, "right", .3s);
   }
-
+  
   &--team {
-    animation: 0.4s slidein-left ease-in-out;
+    @include slidein(.3s, "top", .6s);
   }
-
+  
   &--karma {
-    animation: 0.5s slidein-right ease-in-out;
-  }
-
-}
-
-@include breakpoints("md") {
-  .feature-card {
-    &--supervisor {
-      animation: 0.3s slidein-top ease-in-out;
-    }
-    
-    &--calculator {
-      animation: 0.6s slidein-bottom ease-in-out;
-    }
-
-    &--team {
-      animation: 0.4s slidein-top ease-in-out;
-    }
-
-    &--karma {
-      animation: 0.5s slidein-bottom ease-in-out;
-    }
-  }
-}
-
-@include breakpoints("lg") {
-  .feature-card {
-    &--supervisor {
-      animation: 0.7s rotate-z ease-in-out;
-    }
-    
-    &--calculator {
-      animation: 0.7s rotate-z ease-in-out;
-    }
-
-    &--team {
-      animation: 0.7s rotate-z ease-in-out;
-    }
-
-    &--karma {
-      animation: 0.7s rotate-z ease-in-out;
-    }
+    @include slidein(.3s, "bottom", .9s);
   }
 }
