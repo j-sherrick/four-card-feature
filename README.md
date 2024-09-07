@@ -1,14 +1,10 @@
-<a href="#">
-    <img src="/src/images/icon-favicon.svg" alt="four card feature logo" title="FourCardFeature" align="right" height="60" />
-</a>
+# ![icon] Four Card Feature Section
 
-# ![icon] Frontend Mentor - Four Card Feature Section
-
-This is a solution to the [Four Card Feature Section challenge on Frontend Mentor][fourCardChallenge]. Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Four Card Feature Section challenge on Frontend Mentor][fourCardChallenge]. It was developed in Sass using CSS grid and BEM-inspired architecture.
 
 ## Table of contents
 
-- [ Frontend Mentor - Four Card Feature Section](#-frontend-mentor---four-card-feature-section)
+- [ Four Card Feature Section](#-four-card-feature-section)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
