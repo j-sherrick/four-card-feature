@@ -2,13 +2,13 @@
     <img src="/src/images/icon-favicon.svg" alt="four card feature logo" title="FourCardFeature" align="right" height="60" />
 </a>
 
-# Frontend Mentor - Four card feature section solution
+# ![icon] Frontend Mentor - Four Card Feature Section
 
-This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Four Card Feature Section challenge on Frontend Mentor][fourCardChallenge]. Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
-- [Frontend Mentor - Four card feature section solution](#frontend-mentor---four-card-feature-section-solution)
+- [ Frontend Mentor - Four Card Feature Section](#-frontend-mentor---four-card-feature-section)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
@@ -67,6 +67,8 @@ Users should be able to:
 
 ## Acknowledgments
 
-[integraTech]:    https://integratechsupport.com
-[linkedIn]:       https://linkedin.com/jsherrick
-[frontendMentor]: https://frontendmentor.io
+[integraTech]:        https://www.integratechsupport.com
+[linkedIn]:           https://www.linkedin.com/jsherrick
+[frontendMentor]:     https://www.frontendmentor.io
+[fourCardChallenge]:  https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK
+[icon]:               https://github.com/j-sherrick/four-card-feature/blob/master/src/images/icon-favicon.svg
