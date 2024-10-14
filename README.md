@@ -1,6 +1,6 @@
 # ![icon] Four Card Feature Section
 
-This is a solution to the [Four Card Feature Section challenge on Frontend Mentor][fourCardChallenge]. It was developed in Sass using CSS grid and BEM-inspired architecture.
+This is a solution to the [Four Card Feature Section challenge on Frontend Mentor][fourCardChallenge]. It was developed in Sass using CSS grid and BEM-inspired architecture. It features a responsive CSS grid layout and 
 
 ## Table of contents
 

@@ -31,12 +31,3 @@ $directions: (
     animation: $duration ease-in-out $delay slidein-left backwards;
   }
 }
-
-@keyframes swing-in {
-  0% {
-    transform: rotateX(-95deg);
-  }
-  100% {
-    transform: rotateX(0);
-  }
-}
