@@ -67,4 +67,4 @@ Users should be able to:
 [linkedIn]:           https://www.linkedin.com/jsherrick
 [frontendMentor]:     https://www.frontendmentor.io
 [fourCardChallenge]:  https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK
-[icon]:               https://github.com/j-sherrick/four-card-feature/blob/master/src/images/icon-favicon.svg
+[icon]:               src/images/icon-favicon.svg
