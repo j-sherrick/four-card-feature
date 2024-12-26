@@ -23,14 +23,16 @@ Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 
-### Screenshot
+### Screenshots
 
-![](./screenshot.jpg)
+![screenshot of cards on small screen](src/images/screenshots/sm-screenshot.png)
+![screenshot of cards on medium screen](src/images/screenshots/md-screenshot.png)
+![screenshot of cards on large screen](src/images/screenshots/lg-screenshot.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- [Solution Repository](https://github.com/j-sherrick/four-card-feature)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
@@ -39,18 +41,18 @@ I approached this project with the goal of keeping things clean, loosely followi
 
 Key Steps:
 
-1. Layout Design: I embraced the power of CSS Grid to organize the feature cards. It worked wonders for responsiveness, especially when targeting mobile and desktop designs.
-Component Reusability: While I didn’t go full Web Components, I applied a BEM-inspired methodology to create scalable, maintainable styles for the cards.
-2. Modular Sass: I split styles across clear and modular directories (base, components, layout, and utils), using @use and @forward to keep things DRY and navigable.
-3. Responsive Design: Ensuring the layout gracefully adjusted to devices from 320px to 1440px (and beyond) was a priority. I relied on a few well-placed media queries and a mobile-first approach.
-4. Animations: Subtle transitions for hover effects and card reveal animations added some extra polish without going overboard. The “swing-in” effect got the axe because I couldn't figure out how to do natural-looking overshoot in CSS.
+- Layout Design: I embraced the power of CSS Grid to organize the feature cards. It worked wonders for responsiveness, especially when targeting mobile and desktop designs.
+- Component Reusability: While I didn’t go full Web Components, I applied a BEM-inspired methodology to create scalable, maintainable styles for the cards.
+- Modular Sass: I split styles across clear and modular directories (base, components, layout, and utils), using @use and @forward to keep things DRY and navigable.
+- Responsive Design: Ensuring the layout gracefully adjusted to devices from 320px to 1440px (and beyond) was a priority. I relied on a few well-placed media queries and a mobile-first approach.
+- Animations: Simple slide-in animations added some extra polish without going overboard. The “swing-in” effect got the axe because I couldn't figure out natural-looking overshoot in CSS.
 
 It wasn’t all smooth sailing—like any project, I had those "stare-at-the-screen-questioning-life" moments. But between my growing Git chops and a well-structured project architecture, I brought this one across the finish line. 🎉
 
-### Built with
+### Built simply with love
 
-- Semantic HTML5 markup
-- CSS custom properties
+- HTML
+- Sass
 - CSS Grid
 
 ### What I learned
@@ -72,9 +74,6 @@ This project was a great opportunity to refine my skills in modular Sass, respon
 
 ### Useful resources
 
-Useful resources
-Include resources you referenced:
-
 CSS Grid Guide: CSS Tricks - Complete Guide to Grid
 Sass Modular Architecture: Sass Guidelines
 Responsive Design Best Practices: MDN - Responsive Design
@@ -82,7 +81,7 @@ Responsive Design Best Practices: MDN - Responsive Design
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Add your name here](https://www.integratechsupport.com)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
