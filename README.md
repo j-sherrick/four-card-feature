@@ -25,8 +25,13 @@ Users should be able to:
 
 ### Screenshots
 
+#### Small screen layout
 ![screenshot of cards on small screen](src/images/screenshots/sm-screenshot.png)
+
+#### Medium screen layout
 ![screenshot of cards on medium screen](src/images/screenshots/md-screenshot.png)
+
+#### Large screen layout
 ![screenshot of cards on large screen](src/images/screenshots/lg-screenshot.png)
 
 
