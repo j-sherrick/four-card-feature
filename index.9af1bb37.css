@@ -1,0 +1,240 @@
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol, menu, * li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+}
+
+button, input, textarea, select {
+  font: inherit;
+  color: inherit;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: #0000;
+  padding: 0;
+}
+
+:root {
+  --feature-clr-red: #ea5353;
+  --feature-clr-cyan: #45d3d3;
+  --feature-clr-orange: #fcaf4a;
+  --feature-clr-blue: #549ef2;
+  --feature-clr-darkblue: #4c4e61;
+  --feature-clr-grayishblue: #a3a5ae;
+  --feature-clr-verylightgray: #fafafa;
+}
+
+body {
+  color: var(--feature-clr-darkblue);
+}
+
+:root {
+  --feature-h1-size: clamp(1.5rem, .751vw + 1.275rem, 2rem);
+}
+
+body {
+  font: 200 .9375rem / 1.5 Poppins, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+h1 {
+  letter-spacing: .17px;
+  font-size: var(--feature-h1-size);
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+.header {
+  width: clamp(311px, 21.5vw + 230.38px, 540px);
+  margin-top: 85px;
+}
+
+.header__heading--extra-light {
+  display: block;
+}
+
+.header__description {
+  margin-top: 1rem;
+}
+
+@keyframes slidein-top {
+  from {
+    translate: 0 -125vh;
+  }
+
+  to {
+    translate: 0;
+  }
+}
+
+@keyframes slidein-bottom {
+  from {
+    translate: 0 125vh;
+  }
+
+  to {
+    translate: 0;
+  }
+}
+
+@keyframes slidein-left {
+  from {
+    translate: -125vw;
+  }
+
+  to {
+    translate: 0;
+  }
+}
+
+@keyframes slidein-right {
+  from {
+    translate: 125vw;
+  }
+
+  to {
+    translate: 0;
+  }
+}
+
+.feature-section {
+  --feature-card-width: clamp(311px, 3.66vw + 297.275px, 350px);
+  grid-template-columns: var(--feature-card-width);
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 4.75rem;
+  display: grid;
+}
+
+@media (width >= 768px) {
+  .feature-section {
+    grid-template-columns: repeat(2, var(--feature-card-width));
+    gap: 1.875rem;
+    margin-top: 4rem;
+  }
+}
+
+@media (width >= 1440px) {
+  .feature-section {
+    grid-template-columns: repeat(3, var(--feature-card-width));
+  }
+}
+
+.feature-card__container {
+  float: inline-start;
+  width: 100%;
+  padding: clamp(1.75rem, .38vw + 1.66rem, 2rem);
+}
+
+.feature-card__heading {
+  margin-bottom: .375rem;
+}
+
+.feature-card__description {
+  margin-bottom: clamp(2rem, .75vw + 1.824rem, 2.5rem);
+}
+
+.feature-card__icon {
+  float: right;
+}
+
+@media (width >= 1440px) {
+  .feature-card--supervisor {
+    grid-area: 1 / 1 / 3 / 2;
+    align-self: center;
+  }
+
+  .feature-card--calculator {
+    grid-area: 1 / 3 / 3 / 4;
+    align-self: center;
+  }
+
+  .feature-card--team, .feature-card--karma {
+    grid-column: 2 / 3;
+  }
+}
+
+body {
+  justify-items: center;
+  display: grid;
+}
+
+.header {
+  text-align: center;
+}
+
+.header__heading--extra-light {
+  font-weight: 200;
+}
+
+.feature-card {
+  box-shadow: 0 15px 30px -11px var(--feature-clr-grayishblue);
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+.feature-card__container {
+  border-top: .25rem solid #0000;
+  padding: 1.75rem;
+}
+
+.feature-card__container--supervisor {
+  border-color: var(--feature-clr-cyan);
+}
+
+.feature-card__container--team {
+  border-color: var(--feature-clr-red);
+}
+
+.feature-card__container--karma {
+  border-color: var(--feature-clr-orange);
+}
+
+.feature-card__container--calculator {
+  border-color: var(--feature-clr-blue);
+}
+
+.feature-card__icon {
+  width: clamp(57px, .657vw + 54.536px, 64px);
+  height: auto;
+}
+
+.feature-card--supervisor {
+  animation: .3s ease-in-out backwards slidein-left;
+}
+
+.feature-card--calculator {
+  animation: .3s ease-in-out .3s backwards slidein-right;
+}
+
+.feature-card--team {
+  animation: .3s ease-in-out .6s backwards slidein-top;
+}
+
+.feature-card--karma {
+  animation: .3s ease-in-out .9s backwards slidein-bottom;
+}
+/*# sourceMappingURL=index.9af1bb37.css.map */
