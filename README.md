@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution Repository](https://github.com/j-sherrick/four-card-feature)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Source Repo: [https://github.com/j-sherrick/four-card-feature](https://github.com/j-sherrick/four-card-feature)
+- Live Site: [https://j-sherrick.github.io/four-card-feature/](https://j-sherrick.github.io/four-card-feature/)
 
 ## My process
 
