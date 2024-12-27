@@ -79,17 +79,18 @@ This project was a great opportunity to refine my skills in modular Sass, respon
 
 ### Useful resources
 
-CSS Grid Guide: CSS Tricks - Complete Guide to Grid
-Sass Modular Architecture: Sass Guidelines
-Responsive Design Best Practices: MDN - Responsive Design
+CSS Grid: [MDN - CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout)
+Sass: [Sass - CSS with superpowers](https://sass-lang.com/)
+Responsive Design Best Practices: [MDN - Responsive Design](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design)
 
 
 ## Author
 
-- Website - [Add your name here](https://www.integratechsupport.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
+- Website - [My Day Job](https://www.integratechsupport.com)
+- Frontend Mentor - [@j-sherrick](https://www.frontendmentor.io/profile/j-sherrick)
+- Github - [@j-sherrick](https://github.com/j-sherrick)
+- LinkedIn - [@jsherrick](https://www.linkedin.com/in/jsherrick/)
+  
 ## Acknowledgments
 
 [integraTech]:        https://www.integratechsupport.com
